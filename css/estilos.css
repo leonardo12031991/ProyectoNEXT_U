@@ -105,7 +105,8 @@ color:white;
 #img3{
 	width: 100%;
 	margin-top: 5%;
-	margin-bottom: 10%;
+	margin-bottom
+	: 10%;
 	border: black 1px solid;
 }
 /*Aqui estan las animaciones cuando se coloca
@@ -149,7 +150,7 @@ text-shadow: 2px 2px #02010a;
 
 .contenedorfooter{
 	background-color: #C6d5c5;
-	height: 200px;
+	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -161,14 +162,69 @@ flex-grow: 1;
 .cajaf2{
 order: 2;
 flex-grow: 1;
+margin-top: 1%;
 }
 .cajaf3{
 	order: 3;
 	flex-grow: 1;
+	margin-top: 1%;
 }
 .cajaf4{
 	order: 4;
 	flex-grow: 1;
+	margin-top: 1%;
+}
+#logos{
+margin-top: 5%;
+width: 20%;
+float: left;
+margin-left: -4%;
+text-align: right;
+}
+#t1{
+	font-size: 20px;
+	margin-top: 33px;
+
+}
+#t2{
+	font-size: 20px;
+margin-top: 29px
+}
+#t3{
+	font-size: 20px;
+	margin-top: 28px;
+}
+#t4{
+	font-size: 20px;
+	margin-top: 23px;
+}
+#t5{
+	font-size: 20px;
+	margin-top: 23px;
+}
+#t6{
+	font-size: 20px;
+	margin-top: 23px;
+}
+#t7{
+	font-size: 20px;
+	margin-top: 23px;
+}
+#t8{
+	font-size: 20px;
+	margin-top: 23px;
+}
+#t9{
+	font-size: 20px;
+	margin-top: 23px;
+}#t10{
+	font-size: 20px;
+	margin-top: 23px;
+}
+@media screen and (max-width: 614px){
+	.contenedorfooter{
+		flex-direction: column;
+	}
 }
 
 
@@ -239,6 +295,16 @@ flex-grow: 1;
 	{
 	width: 100%;
 	}
+	@media screen and (max-width: 640px){
+		#enlace1{
+		font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 640px){
+		#enlace2{
+		font-size: 18px;
+		}
+	}
 
 	header
 	{
@@ -249,7 +315,6 @@ flex-grow: 1;
 	.contenedor{
 		display: block;
 	}
-
 }
 figure{
 width: 80%;
