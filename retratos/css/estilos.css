@@ -1,0 +1,202 @@
+*{ 0  }
+
+#wrapper
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+header
+{
+	margin: 0 auto;
+	height: 100px;
+	padding-top: 2%;
+	padding-bottom: 1%;
+border-radius: 12px 12px 0px 0px;
+	background-color:  #5b7989;
+	color:  white;
+	font-size: 40px;
+	 font-family: 'Dancing Script OT', aereal;
+	text-shadow: 2px 2px #02010a;
+
+}
+h3{
+	width: 50%;
+	margin-left: 15px;
+	font-size: 40px;
+	padding-top: 5px;
+}
+/*Etilos de los botones , a estos botones les  puse un
+efecto que los agrandaba al phacer click sobre ellos ,
+luego no pude anular ese efecto para el diseño adaptativo ,
+por lo que decidi dejar solo el subrrayado activo.*/
+#botones{
+width: 35%;
+margin-top: 10px;
+	font-size: 35px;
+	float: right;
+	padding-right: 20px;
+	text-decoration: none;
+
+  }
+#botones a:hover {
+font-size:-45px;
+color:white;
+}
+#botones  a:hover:after{
+		opacity:1;
+		transform: translateY(15px)
+}
+
+#botones  a{
+		 position: relative;
+		 font-weight: normal;
+		 color: white;
+		 margin: 0px 15px;
+		text-decoration: none;
+
+ }
+ #botones  a:after{
+		 position: absolute;
+		 bottom: 7px;
+		 left: 0px;
+		 width: 100%;
+		 height: 4px;
+		 background-color: white;
+		 content: "";
+		 opacity: 0;
+		 transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+		 transform: translateY(15px);
+  }
+	.contenedorfooter{
+		background-color: #C6d5c5;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: row;}
+		.cajaf1{
+			order: 1;
+		flex-grow: 1;
+		}
+		.cajaf2{
+		order: 2;
+		flex-grow: 1;
+		margin-top: 1%;
+		}
+		.cajaf3{
+			order: 3;
+			flex-grow: 1;
+			margin-top: 1%;
+		}
+		.cajaf4{
+			order: 4;
+			flex-grow: 1;
+			margin-top: 1%;
+		}
+		#logos{
+		margin-top: 5%;
+		width: 20%;
+		float: left;
+		margin-left: -4%;
+		text-align: right;
+		}
+		#t1{
+			font-size: 20px;
+			margin-top: 33px;
+
+		}
+		#t2{
+			font-size: 20px;
+		margin-top: 29px
+		}
+		#t3{
+			font-size: 20px;
+			margin-top: 28px;
+		}
+		#t4{
+			font-size: 20px;
+			margin-top: 23px;
+		}
+		#t5{
+			font-size: 20px;
+			margin-top: 23px;
+		}
+		#t6{
+			font-size: 20px;
+			margin-top: 23px;
+		}
+		#t7{
+			font-size: 20px;
+			margin-top: 23px;
+		}
+		#t8{
+			font-size: 20px;
+			margin-top: 23px;
+		}
+		#t9{
+			font-size: 20px;
+			margin-top: 23px;
+		}#t10{
+			font-size: 20px;
+			margin-top: 23px;
+		}
+		@media screen and (max-width: 614px){
+			.contenedorfooter{
+				flex-direction: column;
+			}
+		}
+
+
+			.contenedor{
+				display: flex;
+				background-color:  #d5c75f;
+
+			}
+			@media screen and (max-width: 360px){
+				header{
+					font-size: 25px;
+				}
+			}
+
+		@media screen and (max-width: 615px){
+			#botones{
+
+				font-size: 15px;
+				width: 100%;
+				margin-right: -70px;
+		    background-color: #5b7989;
+				margin-top: 10px;
+				transform: none;
+				transition-duration: 0S;
+
+			}
+			header{
+				font-size: 25px
+			}
+		}
+		/*desde aqui estan los diseños adaptativos */
+		@media screen and (max-width: 960px){
+
+			#wrapper
+			{
+				width: 90%;
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (max-width: 640px){
+
+			#wrapper
+			{
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (max-width: 480px){
+
+		#wrapper
+			{
+				width: 100%;
+				margin: 0 auto;
+			}
