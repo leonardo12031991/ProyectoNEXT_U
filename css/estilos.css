@@ -1,5 +1,5 @@
 *
-{ 0 auto; }
+{ margin: 0; }
 
 #wrapper
 {
@@ -41,7 +41,7 @@ margin-top: 10px;
 
   }
 #botones a:hover {
-font-size:-45px;
+font-size:-30px;
 color:white;
 }
 #botones  a:hover:after{

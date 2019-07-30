@@ -74,7 +74,6 @@ color:white;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin: 0 auto;
 	}
 
 .foto{
@@ -86,7 +85,8 @@ color:white;
 }
 #img1{
 	width: 100%;
--webkit-filter:blur(10px);
+	-webkit-filter:blur(10px);
+
 }
 #img2{
 	width: 100%;
@@ -142,7 +142,6 @@ color:white;
   	display: flex;
   	flex-direction: row;
 font-family: 'Open Sans',dancing script ;
-margin: 0 auto;
 	}
 
     .cajaf1{
@@ -214,24 +213,15 @@ margin: 0 auto;
     @media screen and (max-width: 614px){
     	.contenedorfooter{
     		flex-direction: column;
-
+				margin: 0 auto;
     	}
     }
-
-		    @media screen and (max-width: 640px){
-
-		    	.foto
-		    	{
-		    		width: 90%;
-		    		margin: 0 auto;
-						margin-top: 15px;
-		    	}
-		    }
 
 
     	.contenedor{
     		display: flex;
     		background-color:  #d5c75f;
+					margin: 0 auto;
 
     	}
     	@media screen and (max-width: 360px){
@@ -268,10 +258,11 @@ margin: 0 auto;
 
     @media screen and (max-width: 640px){
 
-    	#wrapper
+    	.foto
     	{
-    		width: 100%;
+    		width: 90%;
     		margin: 0 auto;
+				margin-top: 15px;
     	}
     }
 
