@@ -1,83 +1,120 @@
 *{ margin: 0;}
 
-#wrapper
-{
+#fondo{
+	background: #02010a;
 	width: 100%;
-	margin: 0 auto;
 }
 
-header
+#titulo
 {
-	margin: 0 auto;
-	height: 100px;
-	padding-top: 2%;
-	padding-bottom: 1%;
-border-radius: 12px 12px 0px 0px;
-	background-color:  #5b7989;
-	color:  white;
-	font-size: 40px;
-	 font-family: 'Open Sans',dancing script ;
-	text-shadow: 2px 2px #02010a;
-
-}
-h3{
+	font-size: 30px;
+	color: white;
 	width: 50%;
-	margin-left: 15px;
-	font-size: 40px;
-	padding-top: 5px;
+	margin-left: 1%;
+padding-top: 6%;
 }
-/*Etilos de los botones , a estos botones les  puse un
-efecto que los agrandaba al phacer click sobre ellos ,
-luego no pude anular ese efecto para el diseño adaptativo ,
-por lo que decidi dejar solo el subrrayado activo.*/
-#botones{
-width: 35%;
-margin-top: 10px;
-	font-size: 35px;
-	float: right;
-	padding-right: 20px;
-	text-decoration: none;
-
-  }
-#botones a:hover {
-font-size:-45px;
-color:white;
-}
-#botones  a:hover:after{
-		opacity:1;
-		transform: translateY(15px)
+header{
+		border-radius: 10px 10px 0px 0px;
+	border-radius: 10px ,10px, 0px ,0px;
+	font-family: 'Open Sans',dancing script ;
+	width: 900px;
+	margin: 0 auto;
+	height: 150px;
+	background:  #5b7989;
+	text-shadow: 2px 2px #02010a;
 }
 
-#botones  a{
+nav{
+font-size: 30px;
+float: right;
+margin: 10px auto;
+margin-top: -35px;
+margin-right: 20px;
+
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mianimacion {
+  0%   {top: 150px;}
+  60%  {top: 5px;}
+  100% {top: 0px;}
+
+}
+
+  a{
+		font-family: 'Open Sans',dancing script ;
+		text-shadow: 2px 2px #02010a;
 		 position: relative;
 		 font-weight: normal;
 		 color: white;
-		 margin: 0px 15px;
-		text-decoration: none;
+		 margin: 10px 15px;
+		 -webkit-animation: mianimacion 5s infinite; /* Safari 4.0 - 8.0 */
+		  animation: mianimacion 5s infinite;
+			text-decoration: none;
 
- }
- #botones  a:after{
-		 position: absolute;
-		 bottom: 7px;
-		 left: 0px;
-		 width: 100%;
-		 height: 4px;
-		 background-color: white;
-		 content: "";
-		 opacity: 0;
-		 transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
-		 transform: translateY(15px);
   }
+
+	body{
+		width: 900px;
+		margin: 0 auto;
+	}
 
 	.contenedorpadre{
 		background-color: #d5c75f;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		margin: 0 auto;
+		width: 900px;
 	}
 
 .foto{
-	width: 400px;
+	width: 200px;
+	margin-left: 75px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+
+}
+#img1{
+	width: 100%;
+-webkit-filter:blur(10px);
+}
+#img2{
+	width: 100%;
+-webkit-filter:grayscale(100%)
+}
+#img3{
+	width: 100%;
+-webkit-filter:sepia(90%)
+}
+#img4{
+	width: 100%;
+-webkit-filter:grayscale(100%)
+}
+#img5{
+	width: 100%;
+
+}
+#img6{
+	width: 100%;
+-webkit-filter:grayscale(100%)
+}
+
+	body{
+		width: 900px;
+		margin: 0 auto;
+	}
+	.contenedorpadre{
+		background-color: #d5c75f;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 900px;
+	}
+
+.foto{
+	width: 22%;
 	margin-left: 75px;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -109,36 +146,11 @@ color:white;
 -webkit-filter:grayscale(100%)
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .contenedorfooter{
   	background-color: #C6d5c5;
   	height: 100%;
-  	width: 100%;
+  	width: 900px;
+		margin: 0 auto;
   	display: flex;
   	flex-direction: row;
 font-family: 'Open Sans',dancing script ;
@@ -210,12 +222,14 @@ font-family: 'Open Sans',dancing script ;
     	font-size: 20px;
     	margin-top: 23px;
     }
-    @media screen and (max-width: 614px){
+    @media screen and (max-width: 600px){
     	.contenedorfooter{
     		flex-direction: column;
-				margin: 0 auto;
+				width: 100%;
+
     	}
     }
+
 
 
     	.contenedor{
@@ -247,29 +261,80 @@ font-family: 'Open Sans',dancing script ;
     	}
     }
     /*desde aqui estan los diseños adaptativos */
-    @media screen and (max-width: 960px){
+	}
+	@media screen and (max-width: 360px){
+		header{
+			font-size: 25px;
+		}
+	}
 
-    	#wrapper
-    	{
-    		width: 90%;
-    		margin: 0 auto;
-    	}
-    }
+@media screen and (max-width: 615px){
+	#botones{
 
-    @media screen and (max-width: 640px){
+		font-size: 15px;
+		width: 100%;
+		margin-right: -70px;
+		background-color: #5b7989;
+		margin-top: 10px;
+		transform: none;
+		transition-duration: 0S;
 
-    	.foto
-    	{
-    		width: 90%;
-    		margin: 0 auto;
-				margin-top: 15px;
-    	}
-    }
+	}
+	header{
+		font-size: 25px
+	}
+}
+/*desde aqui estan los diseños adaptativos */
+@media screen and (max-width: 736px){
 
-    @media screen and (max-width: 480px){
+	#fondo
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 736px){
+.foto{
+width: 100%;
+margin: 0 auto;
 
-    #wrapper
-    	{
-    		width: 100%;
-    		margin: 0 auto;
-    	}
+
+}
+@media screen and (max-width: 614px){
+.contenedorfooter{
+flex-direction: column;
+}
+}
+@media screen and (max-width: 614px){
+#titulo{
+width: 100%;
+margin: 0 auto;
+}
+}
+@media screen and (max-width: 614px){
+nav{
+width: 100%;
+margin: 0 auto;
+margin-top: 5px;
+}
+}
+@media screen and (max-width: 640px){
+#enlace1{
+font-size: 18px;
+}
+}
+@media screen and (max-width: 640px){
+#enlace2{
+font-size: 18px;
+}
+}
+@media screen and (max-width: 640px){
+.contenedorpadre{
+width: 100%;
+}
+}
+@media screen and (max-width: 640px){
+.contenedorfooter{
+width: 100%;
+}
+}

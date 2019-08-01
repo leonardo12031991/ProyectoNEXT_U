@@ -1,83 +1,75 @@
 *
 { margin: 0; }
 
-#wrapper
+#titulo
 {
-	width: 100%;
-	margin: 0 auto;
-}
-
-header
-{
-	margin: 0 auto;
-	height: 100px;
-	padding-top: 2%;
-	padding-bottom: 1%;
-border-radius: 12px 12px 0px 0px;
-	background-color:  #5b7989;
-	color:  white;
-	font-size: 40px;
-	font-family: 'Open Sans',dancing script ;
-	text-shadow: 2px 2px #02010a;
-
-}
-h3{
+	font-size: 30px;
+	color: white;
 	width: 50%;
-	margin-left: 15px;
-	font-size: 40px;
-	padding-top: 5px;
+	margin-left: 1%;
+padding-top: 6%;
 }
-/*Etilos de los botones , a estos botones les  puse un
-efecto que los agrandaba al phacer click sobre ellos ,
-luego no pude anular ese efecto para el diseño adaptativo ,
-por lo que decidi dejar solo el subrrayado activo.*/
-#botones{
-width: 35%;
-margin-top: 10px;
-	font-size: 35px;
-	float: right;
-	padding-right: 20px;
-	text-decoration: none;
+header{
+	border-radius: 10px 10px 0px 0px;
+	font-family: 'Open Sans',dancing script ;
+	width: 900px;
+	margin: 0 auto;
+	height: 150px;
+	background:  #5b7989;
+	text-shadow: 2px 2px #02010a;
+}
+nav{
+font-size: 30px;
+float: right;
+margin: 10px auto;
+margin-top: -35px;
+margin-right: 20px;
 
-  }
-#botones a:hover {
-font-size:-30px;
-color:white;
-}
-#botones  a:hover:after{
-		opacity:1;
-		transform: translateY(15px)
 }
 
-#botones  a{
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mianimacion {
+  0%   {top: 150px;}
+  60%  {top: 5px;}
+  100% {top: 0px;}
+
+}
+
+  a{
+		font-family: 'Open Sans',dancing script ;
+		text-shadow: 2px 2px #02010a;
 		 position: relative;
 		 font-weight: normal;
 		 color: white;
-		 margin: 0px 15px;
-		text-decoration: none;
+		 margin: 10px 15px;
+		 -webkit-animation: mianimacion 5s infinite; /* Safari 4.0 - 8.0 */
+		  animation: mianimacion 5s infinite;
+			text-decoration: none;
 
- }
- #botones  a:after{
-		 position: absolute;
-		 bottom: 7px;
-		 left: 0px;
-		 width: 100%;
-		 height: 4px;
-		 background-color: white;
-		 content: "";
-		 opacity: 0;
-		 transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
-		 transform: translateY(15px);
   }
+
+
+#wrapper{
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+#fondo{
+	background: #02010a;
+	width: 100%;
+}
+
+
 /*estilos de las 3 imgenes de la pagina principal y de
  los enlaces que estan debajo */
 
- #columna1
- {
- background-color: #91C9E8;
- width: 100%;
 
- }
+ #columna1
+    {
+ background-color: #82c3a6;
+}
 
 #columna2{
  width: 50%;
@@ -108,6 +100,7 @@ color:white;
 	: 10%;
 	border: black 1px solid;
 }
+
 /*Aqui estan las animaciones cuando se coloca
 el pontero sobre el abjeto en este caso imagenes1 y 2*/
 #img2:hover{
@@ -227,7 +220,19 @@ margin-top: 29px
 		flex-direction: column;
 	}
 }
-
+@media screen and (max-width: 614px){
+	#titulo{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 614px){
+	nav{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 5px;
+	}
+}
 
 	.contenedor{
 		display: flex;
@@ -240,16 +245,7 @@ margin-top: 29px
 		}
 	}
 
-@media screen and (max-width: 615px){
-	#botones{
 
-		font-size: 15px;
-		width: 100%;
-		margin-right: -70px;
-    background-color: #5b7989;
-		margin-top: 10px;
-		transform: none;
-		transition-duration: 0S;
 
 	}
 	header{
@@ -267,11 +263,10 @@ margin-top: 29px
 }
 
 @media screen and (max-width: 640px){
+.contenedorpadre
 
-	#wrapper
 	{
-		width: 100%;
-		margin: 0 auto;
+		width: 100%
 	}
 }
 
